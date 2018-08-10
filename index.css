@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+   list-style: none;
+}
+
+li:not(.nav-home) {
+  border-left: 1px solid black;
+  padding-left: 20px;
+}
+
+.buger-menu {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.name-background {
+    background-image: radial-gradient(#e284da,rgb(206, 211, 212));
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+}
+
+.fb-icon:hover,
+.weixin-icon:hover,
+.ins-icon:hover,
+.twitter-icon:hover {
+    padding: 0;
+}
+
+.name-highlight {
+    margin-top: 50px;
+}
+
+.personal-photo-wrapper {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.personal-photo-wrapper:hover {
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px 5px;
+}
+
+
+@media (min-width: 768px) {
+    .personal-photo-wrapper:hover {
+        overflow: visible;
+        box-shadow: 0 0;
+    }
+
+    .personal-photo:hover {
+        transition-duration: 2s;
+        transform: scale(1.5) translate(100px);
+        position: relative;
+        z-index: 1;
+    }
+
+    .personal-photo {
+        width: 26vw;
+    }
+    .name-background {
+        height: 290px;
+    }
+}
+
+@media (min-width: 991.98px) {
+    .personal-photo {
+        width: 258px;
+    }
+}
