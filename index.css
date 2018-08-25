@@ -2,8 +2,13 @@
     box-sizing: border-box;
 }
 
-ul {
-   list-style: none;
+ul li {
+    color: white;
+    list-style: none;
+}
+
+ul li:hover {
+    color: black;
 }
 
 li:not(.nav-home) {
@@ -11,7 +16,7 @@ li:not(.nav-home) {
   padding-left: 20px;
 }
 
-.buger-menu {
+.burger-menu {
     width: 35px;
     height: 5px;
     background-color: black;
