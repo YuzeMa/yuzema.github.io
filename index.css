@@ -14,7 +14,7 @@ p {
 }
 
 ul li {
-    color: white;
+    color: #808080;
     list-style: none;
 }
 
@@ -23,12 +23,12 @@ ul li:hover {
 }
 
 li:not(.nav-home) {
-  border-left: 1px solid black;
+  border-left: 1px solid #808080;
   padding-left: 20px;
 }
 
 .side-menu-wrapper {
-    background-color: #e284da;
+    background-image: radial-gradient(circle at top,#7FFFD4,rgb(206, 211, 212));
     position: fixed;
     display: none;
     flex-direction: column;
@@ -44,7 +44,7 @@ li:not(.nav-home) {
 
 .side-menu {
     text-align: center;
-    color: #D3D3D3;
+    color: #808080;
     margin-top: 30px;
 }
 
@@ -60,11 +60,11 @@ li:not(.nav-home) {
 }
 
 .nav-bg-color {
-    background-color: #e284da;
+    background-image: radial-gradient(circle at right,#7FFFD4,rgb(206, 211, 212));
 }
 /*-----------  Home -----------*/
 .background-color {
-    background-image: radial-gradient(#e284da,rgb(206, 211, 212));
+    background-image: radial-gradient(#7FFFD4,white);
 }
 
 .social-icon {
