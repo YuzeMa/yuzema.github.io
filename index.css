@@ -2,6 +2,17 @@
     box-sizing: border-box;
 }
 
+p {
+    margin: 0;
+}
+
+#resume,
+#experience,
+#blog,
+#contact {
+    display: none;
+}
+
 ul li {
     color: white;
     list-style: none;
@@ -16,6 +27,31 @@ li:not(.nav-home) {
   padding-left: 20px;
 }
 
+.side-menu-wrapper {
+    background-color: #e284da;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    right: 0;
+    top: 50px;
+    width: 300px;
+    height: 100%;
+}
+
+.side-menu-wrapper a:hover {
+    color: white;
+}
+
+.side-menu {
+    text-align: center;
+    color: #D3D3D3;
+    margin-top: 30px;
+}
+
+.burger-menu-wrapper:hover {
+    cursor: pointer;
+}
+
 .burger-menu {
     width: 35px;
     height: 5px;
@@ -23,7 +59,11 @@ li:not(.nav-home) {
     margin: 6px 0;
 }
 
-.name-background {
+.nav-bg-color {
+    background-color: #e284da;
+}
+/*-----------  Home -----------*/
+.background-color {
     background-image: radial-gradient(#e284da,rgb(206, 211, 212));
 }
 
@@ -57,8 +97,171 @@ li:not(.nav-home) {
     box-shadow: 2px 2px 5px 5px;
 }
 
+/*-----------  Resume -----------*/
+
+.resume-header {
+    height: 80px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+}
+
+.date-dec-resume {
+    color: #e284da;
+}
+
+.company-dec-resume {
+    color: #808080;
+    display: inline-block;
+    border-left: 1px solid #808080;
+    padding-left: 5px;
+}
+.skills-bg-resume {
+    background-color: #D3D3D3;
+    height: 15px;
+    border: 1px solid #808080;
+    margin-bottom: 5px;
+}
+/*------ skill levels -----*/
+.skills-wrapper {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.web-design-skill,
+.graphic-design-skill,
+.print-design-skill,
+.html-skill,
+.css-skill,
+.jquery-skill {
+    background-color: #e284da;
+    height: 100%;
+}
+
+.web-design-skill {
+    width: 65%;
+}
+.graphic-design-skill {
+    width: 65%;
+}
+.print-design-skill {
+    width: 55%;
+}
+.html-skill {
+    width: 85%;
+}
+.css-skill {
+    width: 80%;
+}
+.jquery-skill {
+    width: 75%;
+}
+/*----------- skill levels-----End--*/
+
+.border-dec-resume {
+    border: 1px solid #D3D3D3;
+    padding: 15px;
+    margin: 25px 0 25px 20px;
+    border-left: 3px solid #e284da;
+}
+
+.border-dec-resume-left {
+    margin-top: 60px;
+    float: left;
+    width: 20px;
+    height: 3px;
+    background-color: #e284da;
+}
+
+.border-dec-resume-wrapper {
+    border-left: 1px solid #D3D3D3;
+    padding: 5px 0;
+}
+
+.border-dec-resume-left::before{
+    content: "";
+    background-color: white;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 3px solid #e284da;
+    position: relative;
+    right: 8px;
+    bottom: 6px;
+    z-index: 1;
+}
+
+/*-----------  Contact -----------*/
+
+.contact {
+    margin-bottom: 50px;
+}
+
+.touch-icon {
+    background-color: #D3D3D3;
+    border-radius: 50%;
+    padding-top: 4px;
+    padding-left: 4px;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    color: #e284da;
+    margin-right: 2px;
+}
+
+.touch-icon-lastchild {
+    padding-left: 2px;
+}
+
+.touch-wrapper p {
+    display: inline-block;
+}
+
+.touch-wrapper,
+form div {
+    margin: 20px 0;
+}
+
+.gender-icon {
+    color: #e284da;
+    width: 25px;
+}
+
+.form-item {
+    width: 90%;
+    position: relative;
+}
+
+.form-input {
+    border: 0;
+    margin-left: 35px;
+    width: 90%;
+    border-bottom: 1px solid black;
+}
+
+.contact-icon {
+    position: absolute;
+    height: 100%;
+    width: 35px;
+    text-align: center;
+    padding-top: 5px;
+    color: #808080;
+    background-color: #D3D3D3;
+    border-bottom: 1px solid black;
+}
+
+.submit-button {
+    height: 40px;
+    width: 150px;
+    color: white;
+    background-color: #e284da;
+    border-radius: 5px;
+}
 
 @media (min-width: 768px) {
+    /*-----------  Home -----------*/
     .personal-photo-wrapper:hover {
         overflow: visible;
         box-shadow: 0 0;
@@ -77,10 +280,34 @@ li:not(.nav-home) {
     .name-background {
         height: 290px;
     }
+    /*-----------  Resume -----------*/
+
+    .resume-header {
+        height: 125px;
+        padding: 40px;
+    }
 }
 
 @media (min-width: 991.98px) {
+    /*-----------  Home -----------*/
     .personal-photo {
         width: 258px;
     }
 }
+
+
+
+
+
+
+
+ /*-----------  Target-Fix -----------*/
+
+.target-fix {
+    position: relative;
+    top: -100px; 
+    height: 10px;
+    display: block;
+    overflow: hidden;
+}
+

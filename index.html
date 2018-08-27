@@ -5,30 +5,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Yuze Ma's Profile</title>
         <link rel="icon" type="image/x-icon" href="img/icon_wKT_icon.ico" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="index.css">
+        <script src='https://www.google.com/recaptcha/api.js'></script>
     </head>
     <body>
-        <nav class="navbar sticky-top navbar-light bg-info">
-                <div class="container">
-                    <div><a class="navbar-brand" href="#"><span>Yuze</span><span>Ma</span></a></div>
-                    <ul class="ml-auto d-none d-lg-block my-auto">
-                        <a href="#" class="ml-4"><li class="d-inline-block nav-home">Home</li></a>
-                        <a href="#" class="ml-4"><li class="d-inline-block">Resume</li></a>
-                        <a href="#" class="ml-4"><li class="d-inline-block">Experience</li></a>
-                        <a href="#" class="ml-4"><li class="d-inline-block">Blog</li></a>
-                        <a href="#" class="ml-4"><li class="d-inline-block">More</li></a>
-                    </ul>
-                    <a  href="#"><div class="d-lg-none">
-                        <div class="burger-menu"></div>
-                        <div class="burger-menu"></div>
-                        <div class="burger-menu"></div>
-                    </div></a>
+        <nav class="navbar sticky-top navbar-light nav-bg-color">
+            <div class="container">
+                <div><a class="navbar-brand" href="#"><span>Yuze</span> <span>Ma</span></a></div>
+                <ul class="ml-auto d-none d-lg-block my-auto">
+                    <a href="#homeSection" class="nav-sections ml-4"><li class="d-inline-block nav-home">Home</li></a>
+                    <a href="#resumeSection" class="nav-sections ml-4"><li class="d-inline-block">Resume</li></a>
+                    <a href="#experienceSection" class="nav-sections ml-4"><li class="d-inline-block">Experience</li></a>
+                    <a href="#blogSection" class="nav-sections ml-4"><li class="d-inline-block">Blog</li></a>
+                    <a href="#contactSection" class="nav-sections ml-4"><li class="d-inline-block">Contact</li></a>
+                </ul>
+                <div class="d-lg-none">
+                    <a  id="burger-menu-switch" class="burger-menu-wrapper">
+                    <div class="burger-menu"></div>
+                    <div class="burger-menu"></div>
+                    <div class="burger-menu"></div></a>
                 </div>
+            </div>
+            <div class="side-menu-wrapper d-lg-none">
+                    <a href="#homeSection" class="side-menu">Home</a>
+                    <a href="#resumeSection" class="side-menu">Resume</a>
+                    <a href="#experienceSection" class="side-menu">Experience</a>
+                    <a href="#blogSection" class="side-menu">Blog</a>
+                    <a href="#contactSection" class="side-menu">Contact</a>
+            </div>
         </nav>
-        <div class="pl-3 pr-3">
+        <span id="homeSection" class="target-fix"></span>
+        <!-- /target-fix -->
+        <section id="home" class="pl-3 pr-3">
             <div class="container mt-2 rounded shadow mb-3 pt-3">
-                <div class="container name-background"> 
+                <div class="container background-color"> 
                     <div class="row  pt-3 pb-3">
                         <div class="col-md text-center">
                             <div class="personal-photo-wrapper">
@@ -82,9 +94,111 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <span id="resumeSection" class="target-fix"></span>
+        <!-- /target-fix -->
+        <section id="resume" class="pl-3 pr-3">
+            <div class="background-color resume-header mt-2 container">
+                <h1>Resume</h1>
+            </div>
+            <div class="container rounded-bottom shadow mb-3 pt-5">
+                <div class="row">
+                    <div class="col-md">
+                        <h3>Education</h3>
+                        <div class="container">
+                            <div class="border-dec-resume-wrapper">
+                                <div class="border-dec-resume-left"></div><div class="border-dec-resume"><h5>Specialization Course</h5><p class="date-dec-resume">2010  <span class="company-dec-resume">  Apple Inc.</span></p><p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p></div>
+                                <div class="border-dec-resume-left"></div><div class="border-dec-resume"><h5>Specialization Course</h5><p  class="date-dec-resume">2010  <span class="company-dec-resume">  Apple Inc.</span></p><p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p></div>
+                                <div class="border-dec-resume-left"></div><div class="border-dec-resume"><h5>Specialization Course</h5><p class="date-dec-resume">2010  <span class="company-dec-resume">  Apple Inc.</span></p><p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <h3>Experience</h3>
+                        <div class="container">
+                            <div class="border-dec-resume-wrapper">
+                                <div class="border-dec-resume-left"></div><div class="border-dec-resume"><h5>Frontend-developer</h5><p class="date-dec-resume">Dec 2012 - Current  <span class="company-dec-resume">  Web Agency</span></p><p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p></div>
+                                <div class="border-dec-resume-left"></div><div class="border-dec-resume"><h5>Web Designer</h5><p class="date-dec-resume">Dec 2011 - Nov 2012  <span class="company-dec-resume">  Apple Inc.</span></p><p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p></div>
+                                <div class="border-dec-resume-left"></div><div class="border-dec-resume"><h5>Graphic Designer</h5><p class="date-dec-resume">Jan 2010 - Dec 2011  <span class="company-dec-resume">  Apple Inc.</span></p><p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container skills-wrapper">
+                    <div class="row">
+                        <div class="col-md">
+                            <h3>Design <span class="date-dec-resume">Skills</span></h3>
+                            <p>Web Design</p>
+                            <div class="skills-bg-resume"><div class="web-design-skill"></div></div>
+                            <p>Graphic Design</p>
+                            <div class="skills-bg-resume"><div class="graphic-design-skill"></div></div>
+                            <p>Print Design</p>
+                            <div class="skills-bg-resume"><div class="print-design-skill"></div></div>
+                        </div>
+                        <div class="col-md">
+                            <h3>Coding <span class="date-dec-resume">Skills</span></h3>
+                            <p>HTML5</p>
+                            <div class="skills-bg-resume"><div class="html-skill"></div></div>
+                            <p>CSS3/LESS/SASS</p>
+                            <div class="skills-bg-resume"><div class="css-skill"></div></div>
+                            <p>jQuery</p>
+                            <div class="skills-bg-resume"><div class="jquery-skill"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <span id="experienceSection" class="target-fix"></span>
+        <!-- /target-fix -->
+        <section id="experience">this is experience</section>
+        <span id="blogSection" class="target-fix"></span>
+        <!-- /target-fix -->
+        <section id="blog">this is blog</section>
+        <span id="contactSection" class="target-fix"></span>
+        <!-- /target-fix -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <h3>Get in <span class="date-dec-resume">Touch</span></h3>
+                        <div><iframe
+                        width="100%"
+                        height="200px"
+                        frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCydY-zXbhCH6NI1nTaUHheSMDxelDVD7U
+                            &q=Blaxland+Eastwood+NSW&zoom=15&language=en" allowfullscreen>
+                        </iframe></div>
+                        <div class="touch-wrapper"><i class="fas fa-bus touch-icon"></i><em>Blaxland Rd Eastwood NSW Australia 2122</em></div>
+                        <div class="touch-wrapper"><i class="fas fa-at touch-icon"></i><a href="mailto: yuzema0619@gmail.com">yuzema0619@gmail.com</a></div>
+                        <div class="touch-wrapper"><i class="fas fa-phone-volume touch-icon"></i><p>0451 070 619</p></div>
+                        <div class="touch-wrapper"><i class="fas fa-couch touch-icon touch-icon-lastchild"></i><p>Freelance Available</p></div>
+                    </div>
+                    <div class="col-md">
+                        <form>
+                            <h3>Contact <span class="date-dec-resume">Form</span></h3>
+                            <div class="form-item"><i class="fas fa-users contact-icon"></i><input class="form-input" type="text" id="name" name="user_name" placeholder="Full Name"/></div>
+                            <div class="form-item"><i class="fas fa-envelope-open contact-icon"></i><input class="form-input" type="text" id="mail" name="user_mail" placeholder="Email Address"/></div>
+                            <div class="form-item"><i class="fas fa-file-signature contact-icon"></i><textarea class="form-input" id="message" name="user_message" Placeholder="Message for Me"></textarea></div>
+                            <div><i class="fas fa-transgender gender-icon"></i><label for="gender">Your Gender: </label>
+                            <select id="gender" name="user_sex">
+                                <option value="girl">Girl</option>
+                                <option value="Boy">Boy</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            </div>
+                            <div><label>Your Age: </label>
+                            <input type="radio" id="underAge" value="user_under18" name="user_age"><label for="underAge">Under 18</label>
+                            <input type="radio" id="adult" value="user_over18" name="user_age"><label for="adult">Over 18</label></div>
+                            <div class="g-recaptcha" data-sitekey="6LciomwUAAAAANESitDJurdwWEtWffxyeDB55Rdp"></div>
+                            <button type="submit" class="submit-button">SEND MESSAGE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
         <footer class="container sticky-bottom">
             <p class="text-center"><small>&copy; 2018 All rights reserved. Designed by YuzeMa.</small></p>
         </footer>
+        <script src="index.js"></script>
     </body>
 </html>
