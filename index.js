@@ -2,13 +2,11 @@ const navSections = document.getElementsByClassName('nav-sections');
 const sideMenu = document.getElementsByClassName('side-menu');
 const home = document.getElementById('home');
 const resume = document.getElementById('resume');
-const experience = document.getElementById('experience');
-const blog = document.getElementById('blog');
 const contact = document.getElementById('contact');
 const burgerMenuSwitch = document.getElementById('burger-menu-switch');
 const sideMenuWrapper = document.getElementsByClassName('side-menu-wrapper')[0];
 
-const arrayOfSections =[home,resume,experience,blog,contact];
+const arrayOfSections =[home,resume,contact];
 let currentSectionIndex = 0;
 
 /*-------- Nav Bar  -----*/
